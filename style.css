@@ -3,8 +3,8 @@
   --color-green : #1f631e;
   --color-dark-green: #163b15;
   --color-light-green: #83a681;
-  --color-white : #ffffffe6;
-  --color-transparent-white : #ffffffb1;
+  --color-white : #ffffff;
+  --color-transparent-white : #ffffffc4;
   --color-brown : #513b20;
 
   /*Font-Size*/
@@ -38,7 +38,7 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--color-green);
+  color: var(--color-black);
 }
 
 ul {
@@ -127,3 +127,20 @@ button {
   display: none;
 }
 
+/*home*/
+
+#home {
+  width: 100%;
+  padding: 200px 80px 150px ;
+  background: url('imgs/cafe-restaurant2.jpg') center/cover no-repeat;
+  z-index: -1;
+}
+.home__container {
+  color: var(--color-transparent-white);
+  text-align: right;
+}
+
+.home__container h1 {
+  color: var(--color-white);
+  font-size: 80px;
+}
