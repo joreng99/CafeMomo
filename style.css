@@ -4,6 +4,7 @@
   --color-dark-green: #163b15;
   --color-light-green: #83a681;
   --color-white : #ffffffe6;
+  --color-transparent-white : #ffffffb1;
   --color-brown : #513b20;
 
   /*Font-Size*/
@@ -94,17 +95,35 @@ button {
 
 /*Navbar*/
 #navbar {
+  background-color: var(--color-transparent-white);
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  position: fixed;
+  z-index: 1;
 }
 .navbar__logo {
+  font-size: var(--font-regular);
+  display: flex;
   align-items: center;
+  font-weight: var(--weight-bold);
 }
 .momologo {
   width: 30px;
   height: 30px;
+  margin-right: 16px;
 }
 .navbar__menu {
   display: flex;
 }
+.navbar__menu-item {
+  padding: 0 30px;
+}
+.navbar__toggle-btn {
+  font-size: 30px;
+  color: var(--color-green);
+  display: none;
+}
+
