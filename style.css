@@ -296,6 +296,16 @@ section {
     font-size: 15px;
   } 
 
+  /*Menu*/
+  .menu__coffee,
+  .menu__food {
+    flex-direction: column;
+    align-items: center;
+  }
+  #menu p {
+    font-size: 14px;
+  }
+
   /*About*/
   #aboutus {
     flex-direction: column;
