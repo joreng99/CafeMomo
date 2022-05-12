@@ -38,12 +38,13 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--color-black);
+  color: var(--color-dark-green);
 }
 
 ul {
   list-style: none;
   padding: 0;
+  color: var(--color-dark-green);
 }
 /*Typography*/
 h1 {
@@ -82,7 +83,7 @@ button {
 }
 
 /*Section common*/
-.section {
+section {
   text-align: center;
   padding: 50px;
   margin: auto;
@@ -121,6 +122,10 @@ button {
 .navbar__menu-item {
   padding: 0 30px;
 }
+.navbar__sns i {
+  font-size: var(--font-regular);
+  margin: 0 4px;
+}
 .navbar__toggle-btn {
   font-size: 30px;
   color: var(--color-green);
@@ -128,7 +133,6 @@ button {
 }
 
 /*home*/
-
 #home {
   width: 100%;
   padding: 200px 80px 150px ;
@@ -144,3 +148,34 @@ button {
   color: var(--color-white);
   font-size: 80px;
 }
+
+/*About us*/
+#aboutus {
+  display: flex;
+  margin: 100px;
+  color: var(--color-white);
+  justify-content: center;
+}
+.aboutus__main,
+.aboutus__coffee,
+.aboutus__food {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  line-height: 25px;
+  
+}
+.aboutus__main {
+  background: url('/imgs/night.jpg') center/cover;
+}
+.aboutus__coffee {
+  background: url('/imgs/coffee.jpg') center/cover;
+}
+.aboutus__food {
+  background: url('/imgs/food.jpg') center/cover;
+}
+
