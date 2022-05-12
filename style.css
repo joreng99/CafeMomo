@@ -133,7 +133,7 @@ section {
   display: none;
   position: absolute;
   top: 10px;
-  right: 4px
+  right: 4px;
 }
 
 /*home*/
@@ -207,8 +207,8 @@ section {
 .coffee__menu,
 .food__menu {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   margin: 10px;
 }
 
@@ -305,7 +305,6 @@ section {
   #menu p {
     font-size: 14px;
   }
-
   /*About*/
   #aboutus {
     flex-direction: column;
