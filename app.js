@@ -19,5 +19,15 @@ menuFoodItems.addEventListener('click', (event)=>{
 });
 
 //Fade out home by scrolling down
+
+
 //Show about-me-card when it is shown more than 30%
+
+
 // Show the menu when the toggle button is clicked
+  const toggleBtn = document.querySelector('.navbar__toggle-btn'); 
+  const navbarMenu = document.querySelector('.navbar__menu');
+
+  toggleBtn.addEventListener('click', ()=>{
+    navbarMenu.classList.toggle('open');
+  });
