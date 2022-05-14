@@ -22,11 +22,8 @@ menuFoodItems.addEventListener('click', (event)=>{
 const home = document.querySelector('.home__container');
 const homeHeight = home.clientHeight;
 document.addEventListener('scroll', () => {
-  home.style.opacity = 1-window.scrollY/homeHeight;
+  home.style.opacity = 1-window.scrollY/(2*homeHeight);
 });
-
-//Show about-me-card when it is shown more than 30%
-
 
 // Show the menu when the toggle button is clicked
   const toggleBtn = document.querySelector('.navbar__toggle-btn'); 
@@ -35,5 +32,3 @@ document.addEventListener('scroll', () => {
   toggleBtn.addEventListener('click', ()=>{
     navbarMenu.classList.toggle('open');
   });
-
-  //Close the menu when the menu was already tapped
