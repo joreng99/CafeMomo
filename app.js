@@ -18,8 +18,12 @@ menuFoodItems.addEventListener('click', (event)=>{
   showDetails(event)
 });
 
-//Fade out home by scrolling down
-
+//Slowly fade home by scrolling down
+const home = document.querySelector('.home__container');
+const homeHeight = home.clientHeight;
+document.addEventListener('scroll', () => {
+  home.style.opacity = 1-window.scrollY/homeHeight;
+});
 
 //Show about-me-card when it is shown more than 30%
 
@@ -31,3 +35,5 @@ menuFoodItems.addEventListener('click', (event)=>{
   toggleBtn.addEventListener('click', ()=>{
     navbarMenu.classList.toggle('open');
   });
+
+  //Close the menu when the menu was already tapped
